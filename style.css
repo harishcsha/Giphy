@@ -1,0 +1,102 @@
+/**
+ * @author [Harish C Jingade]
+ * @email [justdoitnowharish@gmail.com]
+ * @create date 2019-04-21 17:26:51
+ * @modify date 2019-04-21 17:26:51
+ * @desc [Giphy Search]
+ */
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+}
+
+html {
+  height: 100vh;
+  /* background-image: linear-gradient(to bottom right, #2BC0E4, #EAECC6); */
+  background: #000000 url('http://media3.giphy.com/media/fJ1eCBjmMoEvu/giphy.gif');
+}
+
+.giphy_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 600px) {
+  .giphy_container {
+    width: 100%;
+    left: 58%;
+  }
+}
+
+
+.giphy_input {
+  width: 300px;
+  text-align: center;
+  height: 30px;
+  outline: none;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  border-radius: 6px;
+  color: #000000;
+}
+
+@media screen and (max-width: 600px) {
+  .giphy_input {
+    width: 220px;
+  }
+}
+
+.giphy_bttn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  /* background-color: #2BC0E4; */
+  background-color: #0f8;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .giphy_bttn {
+    width: 80px;
+  }
+}
+
+.giphy_bttn:hover {
+  background-color: #EAECC6;
+}
+
+#result_giphy {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imgDisplay {
+  width: 300px;
+  height: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .imgDisplay {
+    width: 200px;
+    position: relative;
+    left: 30%;
+    top: 20%;
+    height: 200px;
+  }
+
+}
